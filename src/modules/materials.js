@@ -1,11 +1,15 @@
 
+let materials = [
+    'Hydrogen',
+    'Helium',
+    'Lithium',
+    'Beryllium'
+];
+
 module.exports = {
-    sayHello: [
-        'Hydrogen',
-        'Helium',
-        'Lithium',
-        'Beryllium'
-    ].map((material) => {
-        return material.length;
-    })
+    sayHello: function () {
+        return materials.map((material) => {
+            return material.length;
+        });
+    }
 };

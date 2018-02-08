@@ -4,7 +4,7 @@ import materials from './modules/materials';
 import './style.css';
 
     function component() {
-        var element = document.createElement('div');
+        let element = document.createElement('div');
 
            // Lodash, now imported by this script
             element.innerHTML = _.join(['Hello', 'webpack'], ' ');
@@ -15,4 +15,4 @@ import './style.css';
 
 document.body.appendChild(component());
 console.log(myModule.sayHello("Namee"));
-console.log(materials);
+console.log(materials.sayHello());
