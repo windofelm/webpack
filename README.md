@@ -1,5 +1,5 @@
-# UMD Design.
-Javascript UMD example.
+# Webpack Bundler.
+Javascript webpack bundle example.
 
 ## Run build
 Make bundle.
