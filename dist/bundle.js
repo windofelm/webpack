@@ -90,7 +90,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
 
 document.body.appendChild(component());
-console.log(__WEBPACK_IMPORTED_MODULE_1__modules_module___default.a.sayHello("Namee"))
+console.log(__WEBPACK_IMPORTED_MODULE_1__modules_module___default.a.sayHello("Namee"));
 
 /***/ }),
 /* 1 */
