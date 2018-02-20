@@ -16,3 +16,8 @@ function component() {
 document.body.appendChild(component());
 console.log(myModule.sayHello("Namee"));
 console.log(materials.sayHello());
+
+
+module.exports = { // Public methods
+    sayHello: myModule.sayHello
+};

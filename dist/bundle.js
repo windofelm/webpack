@@ -1,3 +1,4 @@
+var MyLibrary =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -99,6 +100,10 @@ function component() {
 document.body.appendChild(component());
 console.log(_module2.default.sayHello("Namee"));
 console.log(_materials2.default.sayHello());
+
+module.exports = {
+    sayHello: _module2.default.sayHello
+};
 
 /***/ }),
 /* 1 */
