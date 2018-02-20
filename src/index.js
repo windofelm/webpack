@@ -21,3 +21,5 @@ console.log(materials.sayHello());
 module.exports = { // Public methods
     sayHello: myModule.sayHello
 };
+
+//MyLibrary.sayHello()
