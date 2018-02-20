@@ -1,5 +1,14 @@
-var MyLibrary =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["MyLibrary"] = factory();
+	else
+		root["MyLibrary"] = factory();
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -101,9 +110,11 @@ document.body.appendChild(component());
 console.log(_module2.default.sayHello("Namee"));
 console.log(_materials2.default.sayHello());
 
-module.exports = {
+module.exports = { // Public methods
     sayHello: _module2.default.sayHello
 };
+
+//MyLibrary.sayHello()
 
 /***/ }),
 /* 1 */
@@ -17878,3 +17889,4 @@ module.exports = function (css) {
 
 /***/ })
 /******/ ]);
+});

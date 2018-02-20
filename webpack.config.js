@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         library: 'MyLibrary',
+        libraryTarget: "umd", // universal module definition
         path: path.resolve(__dirname, 'dist')
     },
     module: {
