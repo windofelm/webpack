@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "b": "webpack --progress --colors", // another option
     "build:prod": "webpack -p",
     "watch": "webpack --watch",
     "test": "node ./node_modules/mocha/bin/mocha"

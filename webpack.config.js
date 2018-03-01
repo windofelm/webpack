@@ -35,6 +35,6 @@ module.exports = {
     },
     plugins: [
         new LiveReloadPlugin(reloadOptions),
-        new UglifyJSPlugin()
+        //new UglifyJSPlugin() // Minify and tree-shanking
     ]
 };
