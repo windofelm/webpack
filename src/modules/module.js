@@ -1,8 +1,8 @@
-module.exports = {
-    sayHello: function (name) {
-        return "Hello " + name + " TWO";
-    },
-    sayBay: function (name) {
-        return "Bay " + name;
-    }
-};
+
+export function sayHello (name) {
+    return "Hello " + name + " TWO";
+}
+
+export function sayBay (name) {
+    return "Bay " + name;
+}
