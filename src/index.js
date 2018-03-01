@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import myModule from './modules/module';
+import {sayHello} from './modules/module';
 import materials from './modules/materials';
 import './style.css';
 
@@ -14,7 +14,7 @@ function component() {
 }
 
 document.body.appendChild(component());
-console.log(myModule.sayHello("Namee"));
+console.log(sayHello("Namee"));
 console.log(materials.sayHello());
 
 

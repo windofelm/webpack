@@ -1,5 +1,6 @@
 const path = require('path');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var reloadOptions = {};
 
@@ -33,6 +34,7 @@ module.exports = {
       ]
     },
     plugins: [
-        new LiveReloadPlugin(reloadOptions)
+        new LiveReloadPlugin(reloadOptions),
+        //new UglifyJSPlugin()
     ]
 };
