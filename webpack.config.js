@@ -34,7 +34,7 @@ module.exports = {
       ]
     },
     plugins: [
-        new LiveReloadPlugin(reloadOptions),
+        new LiveReloadPlugin(reloadOptions), // when webpack --watch
         //new UglifyJSPlugin() // Minify and tree-shanking
     ]
 };

@@ -98,7 +98,7 @@ function component() {
     var element = document.createElement('div');
 
     // Lodash, now imported by this script
-    element.innerHTML = _lodash2.default.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = _lodash2.default.join(['Hello', 'webpack..'], ' ');
     element.classList.add('hello');
 
     return element;
