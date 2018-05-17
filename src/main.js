@@ -1,5 +1,9 @@
 import _ from 'lodash';
 import {sayHello, sayBay, _isSame} from './modules/module';
+
+import isUndefined from './modules/isUndefined';
+import isNull from './modules/isNull';
+
 import materials from './modules/materials';
 import './style.css';
 
@@ -21,7 +25,9 @@ console.log(materials.sayHello());
 module.exports = { // Public methods
     sayHello: sayHello,
     sayBay: sayBay,
-    isSame: _isSame
+    isSame: _isSame,
+    isUndefined: isUndefined,
+    isNull: isNull
 };
 
 //MyLibrary.sayHello();
