@@ -6,8 +6,8 @@ let reloadOptions = {};
 
 module.exports = {
     entry: {
-        "bundle": "./src/index.js",
-        "bundle.min": "./src/index.js",
+        "bundle": "./src/main.js",
+        "bundle.min": "./src/main.js",
     },
     output: {
         filename: "[name].js",
