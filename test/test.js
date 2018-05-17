@@ -1,10 +1,10 @@
 const assert = require('assert');
 const myLibrary = require('../dist/bundle.min');
 
-function fetchData(callbackFunction){
+/*function fetchData(callbackFunction){
     let foo = "peanut butter";
     callbackFunction(foo);
-}
+}*/
 
 describe('array example', function() {
     describe('#indexOf()', function() {
@@ -46,14 +46,14 @@ describe('jest examples', function() {
         }
     });
 
-    test('the data is peanut butter', done => {
+    /*test('the data is peanut butter', done => {
         function callback(data) {
             expect(data).toBe('peanut butter');
             done();
         }
 
         fetchData(callback);
-    });
+    });*/
 });
 
 
