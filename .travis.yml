@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+install:
+- npm install
+script:
+- npm run test-jest
+- npm run build
+cache:
+  directories:
+  - node_modules
+notifications:
+  slack:
+    secure: oTVkmYHloGK7fKE9JWXUCEEV7wA4zyVa9icfYYdWAT18o1EZcwdqwqHfLxtHouJK4BDtB6AIegoh8FUH2RFNODAYzHRyudKYDSc5cBdOlAovz/TcPfkhA4g/yivr4WI33u+f+bytPI3e3Ng8Ac8SzezMInB+toKyi5EjCyfKJWP7mUVx03FtmlolwiwDV2sn1EurnthT2byBYZvw5KtzNaDYE8zt+48uS4Co58X/sc9IYnlpWGBkD2VVrafSmB/WXq1Xxp2F1+NmrlK0opXvfpVavTQv7dEy60lrFYcZalWveOLNsWcLzyylch8MuCa6vH4KZiV88vaahxSYDvPoCtxEbobxjKsN+KWRgqPO8JxdDTPznBM3Umgx1WdWVt/M3DbZfWYv01AhVe5C+zmimoFE8WoJDUtB8W3RemruryXyUJLxxCGrJtf48V6Kn9NpqjR8CAr1mkEXHhG4/RB6EnkaHVjau35bBxYAEjX7ohD9qxo9tX5snWWRAYefXExpj90HgYJGB15C7fvkJzdgeADX4KSUrPc6Oa31HKj1QhsKGfEh9gh54HI3JcV18PFH2G7fv3Kn3PP058NY/COOdy7bnxfzzl6NWcV/xVQEyOjXW3JM0+HE6p83xCipMuh1ECA0Hz9IoP4CcfMnQuCoAlSj85XPGt4TusfgMS7WMho=
