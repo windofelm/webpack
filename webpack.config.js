@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
@@ -38,6 +39,9 @@ module.exports = {
     },
     plugins: [
         new LiveReloadPlugin(reloadOptions), // when webpack --watch
-        new UglifyJSPlugin() // Minify and tree-shanking
+        new webpack.optimize.UglifyJsPlugin({
+            include: /\.min\.js$/,
+            minimize: true
+        })
     ]
 };
