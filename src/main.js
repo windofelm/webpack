@@ -3,6 +3,7 @@ import {sayHello, sayBay, _isSame} from './modules/module';
 
 import isUndefined from './modules/isUndefined';
 import isNull from './modules/isNull';
+import isAlive from './modules/isAlive';
 
 import materials from './modules/materials';
 import './style.css';
@@ -27,7 +28,8 @@ module.exports = { // Public methods
     sayBay: sayBay,
     isSame: _isSame,
     isUndefined: isUndefined,
-    isNull: isNull
+    isNull: isNull,
+    isAlive: isAlive
 };
 
 //MyLibrary.sayHello();

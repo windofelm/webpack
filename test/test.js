@@ -60,6 +60,11 @@ describe('jest examples', function() {
         expect(myLibrary.isUndefined(sampleVar)).toEqual(true);
     });
 
+    test('test isAlive module', () => {
+        let sampleVar;
+        expect(myLibrary.isAlive(sampleVar)).toEqual(false);
+    });
+
 });
 
 
