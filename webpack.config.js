@@ -5,9 +5,12 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 let reloadOptions = {};
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        "bundle": "./src/index.js",
+        "bundle.min": "./src/index.js",
+    },
     output: {
-        filename: 'bundle.js',
+        filename: "[name].js",
         library: 'MyLibrary',
         libraryTarget: "umd", // universal module definition
         path: path.resolve(__dirname, 'dist')
@@ -35,6 +38,6 @@ module.exports = {
     },
     plugins: [
         new LiveReloadPlugin(reloadOptions), // when webpack --watch
-        //new UglifyJSPlugin() // Minify and tree-shanking
+        new UglifyJSPlugin() // Minify and tree-shanking
     ]
 };
