@@ -1,10 +1,10 @@
 const assert = require('assert');
 const myLibrary = require('../dist/bundle.min');
 
-/*function fetchData(callbackFunction){
+function fetchData(callbackFunction){
     let foo = "peanut butter";
     callbackFunction(foo);
-}*/
+}
 
 describe('array example', function() {
     describe('#indexOf()', function() {
@@ -27,7 +27,7 @@ describe('mapArrow', function() {
 });
 
 // Jest
-/*describe('jest examples', function() {
+describe('jest examples', function() {
     test('two plus two is four', () => {
         expect(2 + 2).toBe(4);
     });
@@ -54,7 +54,7 @@ describe('mapArrow', function() {
 
         fetchData(callback);
     });
-});*/
+});
 
 
 // test finish.
