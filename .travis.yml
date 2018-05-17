@@ -6,6 +6,7 @@ install:
 script:
 - npm run build
 - npm run test-jest
+- npm run eslint
 cache:
   directories:
   - node_modules
