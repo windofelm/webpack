@@ -27,7 +27,7 @@ describe('mapArrow', function() {
 });
 
 // Jest
-describe('jest examples', function() {
+/*describe('jest examples', function() {
     test('two plus two is four', () => {
         expect(2 + 2).toBe(4);
     });
@@ -46,15 +46,15 @@ describe('jest examples', function() {
         }
     });
 
-    /*test('the data is peanut butter', done => {
+    test('the data is peanut butter', done => {
         function callback(data) {
             expect(data).toBe('peanut butter');
             done();
         }
 
         fetchData(callback);
-    });*/
-});
+    });
+});*/
 
 
 // test finish.
