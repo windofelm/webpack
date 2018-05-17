@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import {sayHello} from './modules/module';
+import {sayHello, sayBay} from './modules/module';
 import materials from './modules/materials';
 import './style.css';
 
@@ -19,7 +19,8 @@ console.log(materials.sayHello());
 
 
 module.exports = { // Public methods
-    sayHello: sayHello
+    sayHello: sayHello,
+    sayBay: sayBay
 };
 
-//MyLibrary.sayHello()
+//MyLibrary.sayHello();

@@ -109,10 +109,11 @@ console.log((0, _module.sayHello)("Namee"));
 console.log(_materials2.default.sayHello());
 
 module.exports = { // Public methods
-    sayHello: _module.sayHello
+    sayHello: _module.sayHello,
+    sayBay: _module.sayBay
 };
 
-//MyLibrary.sayHello()
+//MyLibrary.sayHello();
 
 /***/ }),
 /* 1 */
