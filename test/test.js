@@ -54,6 +54,12 @@ describe('jest examples', function() {
 
         fetchData(callback);
     });
+
+    test('test undefined module', () => {
+        let sampleVar;
+        expect(myLibrary.isUndefined(sampleVar)).toEqual(true);
+    });
+
 });
 
 
